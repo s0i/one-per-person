@@ -15,5 +15,5 @@ DELETE_RECORD = """ DELETE FROM users WHERE id = ? """
 FIND_RECORD = """ SELECT COUNT(*) FROM users WHERE id = ? """
 
 # PRAW
-bot_name = 'Main'
-subreddit = 'All'
+bot_name = 'PRAW.INI SECTION NAME'
+subreddit = 'SUBREDDIT NAME'
