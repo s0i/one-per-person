@@ -12,10 +12,7 @@ class DB:
             print("Cannot create database connection!")
 
     def find(self, id):
-        if self.c.execute(config.FIND_RECORD, (id,)).fetchone()[0] == 0:
-            return False
-        
-        return True
+        return self.c.execute(config.FIND_RECORD, (id,)).fetchone()[0] != 0
 
     def add(self, values):
         print(f'Inserted {values} into the DB')
